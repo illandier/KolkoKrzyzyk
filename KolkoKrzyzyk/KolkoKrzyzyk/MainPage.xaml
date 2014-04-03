@@ -16,24 +16,39 @@
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent" MouseLeftButtonDown="LayoutRoot_MouseLeftButtonDown">
         <Grid.RowDefinitions>
-            <RowDefinition Height="100"/>
-            <RowDefinition Height="100"/>
-            <RowDefinition Height="100"/>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="100"></ColumnDefinition>
-            <ColumnDefinition Width="100"></ColumnDefinition>
-            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition Width="150"></ColumnDefinition>
+            <ColumnDefinition Width="150"></ColumnDefinition>
+            <ColumnDefinition Width="150"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <Image Name="image1" Margin="1" Grid.Row="0" Grid.Column="0" Source="/pusty.jpg"></Image>
-        <Image Name="image2" Margin="1" Grid.Row="0" Grid.Column="1" Source="/pusty.jpg"></Image>
-        <Image Name="image3" Margin="1" Grid.Row="0" Grid.Column="2" Source="/pusty.jpg"></Image>
-        <Image Name="image4" Margin="1" Grid.Row="1" Grid.Column="0" Source="/pusty.jpg"></Image>
-        <Image Name="image5" Margin="1" Grid.Row="1" Grid.Column="1" Source="/pusty.jpg"></Image>
-        <Image Name="image6" Margin="1" Grid.Row="1" Grid.Column="2" Source="/pusty.jpg"></Image>
-        <Image Name="image7" Margin="1" Grid.Row="2" Grid.Column="0" Source="/pusty.jpg"></Image>
-        <Image Name="image8" Margin="1" Grid.Row="2" Grid.Column="1" Source="/pusty.jpg"></Image>
-        <Image Name="image9" Margin="1" Grid.Row="2" Grid.Column="2" Source="/pusty.jpg"></Image>
+        <Image Name="image0" Margin="1" Grid.Row="0" Grid.Column="0" Source="/pusty.jpg"></Image>
+        <Image Name="image1" Margin="1" Grid.Row="0" Grid.Column="1" Source="/pusty.jpg"></Image>
+        <Image Name="image2" Margin="1" Grid.Row="0" Grid.Column="2" Source="/pusty.jpg"></Image>
+        <Image Name="image3" Margin="1" Grid.Row="1" Grid.Column="0" Source="/pusty.jpg"></Image>
+        <Image Name="image4" Margin="1" Grid.Row="1" Grid.Column="1" Source="/pusty.jpg"></Image>
+        <Image Name="image5" Margin="1" Grid.Row="1" Grid.Column="2" Source="/pusty.jpg"></Image>
+        <Image Name="image6" Margin="1" Grid.Row="2" Grid.Column="0" Source="/pusty.jpg"></Image>
+        <Image Name="image7" Margin="1" Grid.Row="2" Grid.Column="1" Source="/pusty.jpg"></Image>
+        <Image Name="image8" Margin="1" Grid.Row="2" Grid.Column="2" Source="/pusty.jpg"></Image>
+        <Grid Grid.Row="3" Grid.ColumnSpan="4">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBlock TextAlignment="Center" Name="Info" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"></TextBlock>
+            <Button Grid.Row="1" Grid.Column="0" Width="200" Height="100" Background="DarkBlue" Click="Button_Click_1">Reset</Button>
+            <!--<Button Grid.Row="1" Grid.Column="1" Width="200" Height="100" Background="DarkBlue" Click="Button_Click">Start</Button>-->
+        </Grid>
     </Grid>
- 
+    
 </phone:PhoneApplicationPage>
